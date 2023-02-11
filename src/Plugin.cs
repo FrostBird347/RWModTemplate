@@ -8,27 +8,24 @@ using System;
 #pragma warning restore CS0618
 
 namespace RENAME_ME {
-	
+
 	[BepInPlugin("frostbird347.renameme", "REMAME_ME", "0.1.0")]
 	public sealed class Plugin : BaseUnityPlugin {
-	{
 		bool init;
 		private PluginOptions Options = null;
 		bool configWorking = false;
-		
-		public void OnEnable()
-		{
+
+		public void OnEnable() {
 			// Add hooks here
 			On.RainWorld.OnModsInit += Init;
 		}
-		
-		private void Init(On.RainWorld.orig_OnModsInit orig, RainWorld self)
-		{
+
+		private void Init(On.RainWorld.orig_OnModsInit orig, RainWorld self) {
 			orig(self);
-			
+
 			if (!init) {
 				init = true;
-				
+
 				try {
 					Options = new PluginOptions(this, Logger);
 					MachineConnector.SetRegisteredOI("frostbird347.hairlesssaint", Options);
@@ -39,4 +36,5 @@ namespace RENAME_ME {
 				}
 			}
 		}
+	}
 }
