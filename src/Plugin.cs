@@ -28,7 +28,7 @@ namespace RENAME_ME {
 
 				try {
 					Options = new PluginOptions(this, Logger);
-					MachineConnector.SetRegisteredOI("frostbird347.hairlesssaint", Options);
+					MachineConnector.SetRegisteredOI("frostbird347.RENAME_ME", Options);
 					configWorking = true;
 				} catch (Exception err) {
 					Logger.LogError(err);
