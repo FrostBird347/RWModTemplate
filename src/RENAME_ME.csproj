@@ -23,6 +23,6 @@
 			<Assets Include="$(ProjectDir)../assets/**/*.*" />
 		</ItemGroup>
 		<Copy SourceFiles="@(Assets)" DestinationFiles="$(ProjectDir)../../_resources/Rain World//RainWorld_Data/StreamingAssets/mods/$(ProjectName)/%(RecursiveDir)%(Filename)%(Extension)" />
-		<Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ProjectDir)../../_resources/Rain World//RainWorld_Data/StreamingAssets/mods/$(ProjectName)/plugins" />
+		<Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ProjectDir)../../_resources/Rain World//RainWorld_Data/StreamingAssets/mods/$(ProjectName)/newest/plugins" />
 	</Target>
 </Project>

@@ -1,12 +1,12 @@
 ﻿{
   "id": "frostbird347.renameme",
   "name": "RENAME_ME",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": "FrostBird347",
   "description": "RENAME_ME",
   "requirements": ["moreslugcats"],
   "requirements_names": ["More Slugcats Expansion (example)"],
   "checksum_override_version": false,
-  "target_game_version": "v1.9.06",
+  "target_game_version": "v1.9.14",
   "youtube_trailer_id": "kMfWWQJx0dE"
 }
