@@ -43,4 +43,4 @@ done
 mv src/TestMod.csproj "src/${code_name}.csproj"
 
 # This command runs only once on GHA!
-rm -f .github/template.yml
+rm -r .github/
