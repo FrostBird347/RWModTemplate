@@ -35,7 +35,7 @@ do
         sed -i "s/$original_mod_id/$mod_id/g" $filename
         sed -i "s/$original_display_name/$display_name/g" $filename
         sed -i "s/$original_description/$description/g" $filename
-        sed -i "s/    /	/g" $filename
+        #sed -i "s/    /	/g" $filename
         echo "Renamed $filename"
     fi
 done
