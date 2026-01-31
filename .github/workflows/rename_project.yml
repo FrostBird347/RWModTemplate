@@ -41,7 +41,7 @@ jobs:
         shell: bash
 
       - name: Rename the project
-        if: !fromJson(steps.get_info.outputs.result).isFork
+        if: fromJson(steps.get_info.outputs.result).isFork != true
         run: |
           echo "Renaming the project with -a(author) ${{ env.REPOSITORY_OWNER }} -n(name) ${{ env.REPOSITORY_NAME }} -u(urlname) ${{ env.REPOSITORY_URLNAME }}"
           .github/rename_project.sh -a ${{ env.REPOSITORY_OWNER }} -n "${{ env.REPOSITORY_NAME }}" -u ${{ env.REPOSITORY_URLNAME }} -d "${{ env.REPOSITORY_DESCRIPTION }}"
