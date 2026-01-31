@@ -37,7 +37,7 @@ jobs:
             return response.data.description;
           result-encoding: string
 
-      - run: echo "REPOSITORY_DESCRIPTION=$(echo '${{ steps.get_description.outputs.result }}')" >> $GITHUB_ENV
+      - run: echo "REPOSITORY_DESCRIPTION=$(echo "${{steps.get_description.outputs.result}}")" >> $GITHUB_ENV
         shell: bash
         
       - name: Is this still a template
