@@ -10,7 +10,7 @@ do
 done
 
 code_name="$(echo "$display_name" | sed -r 's/.*/\L&/;s/(^| )([a-z])/\U\2/g')"
-mod_id="$(echo "com.${author}.${code_name}" | sed -r 's/.*/\L&/')"
+mod_id="$(echo "${author}.${code_name}" | sed -r 's/.*/\L&/')"
 
 echo "Author: $author";
 echo "Display Name: $display_name";
@@ -22,7 +22,7 @@ echo "Renaming project..."
 
 original_author="Author"
 original_code_name="TestMod"
-original_mod_id="com.author.testmod"
+original_mod_id="author.testmod"
 original_display_name="Test Mod"
 original_description="Put a neat description here"
 
